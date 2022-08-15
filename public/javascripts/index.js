@@ -11,3 +11,5 @@ if (urlPath === "/portfolio") {
 if (urlPath === "/contact") {
   document.querySelector("#contact").className = "highlight";
 }
+
+
