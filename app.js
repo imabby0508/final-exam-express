@@ -1,16 +1,31 @@
-const express = require('express')
-const app = express()
-const port = 3000
+const express = require("express");
+const app = express();
+const port = 3000;
 
-const exphbs = require('express-handlebars')
+const exphbs = require("express-handlebars");
 
-app.engine('handlebars', exphbs.engine({ defaultLayout: 'main' }))
-app.set('view engine', 'handlebars')
+app.engine("handlebars", exphbs.engine({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
 
-app.get('/', (req, res) => {
-  res.render('index')
-})
+app.use(express.static("public"));
+
+app.get("/", (req, res) => {
+  res.render("index");
+});
+
+app.get("/about", (req, res) => {
+  console.log(res);
+  res.render("about");
+});
+
+app.get("/portfolio", (req, res) => {
+  res.render("portfolio");
+});
+
+app.get("/contact", (req, res) => {
+  res.render("contact");
+});
 
 app.listen(port, () => {
-  console.log(`Express is listening on localhost:${port}`)
-})
+  console.log(`Express is listening on localhost:${port}`);
+});

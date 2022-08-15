@@ -4,22 +4,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Final Exam</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
+
   <body>
     {{! navigation }}
     <nav class="navbar">
       <div class="container">
-        <div class="btn-home">
-          <a class="navbar-brand" href="#">回到頁首</a>
-        </div>
-        <div class="buttons">
-          <button>About</button>
-          <button>Portfolio</button>
-          <button>Contact</button>
-        </div>
+        <ul class="home-button-wrapper">
+          <li class="home-button" id="home"><a href="/">回到頁首</a></li>
+        </ul>
+        <ul class="buttons-wrapper">
+          <li class="button" id="about"><a href="/about">About</a></li>
+          <li class="button" id="portfolio"><a
+              href="/portfolio"
+            >Portfolio</a></li>
+          <li class="button" id="contact"><a href="/contact">Contact</a></li>
+        </ul>
       </div>
     </nav>
 
     {{{body}}}
+    <script src="/javascripts/index.js"></script>
   </body>
+
 </html>

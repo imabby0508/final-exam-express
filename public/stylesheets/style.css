@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-button-wrapper,
+.buttons-wrapper {
+  display: flex;
+  margin: 3px;
+  padding: 0;
+}
+
+.button,
+.home-button {
+  height: 30px;
+  width: 75px;
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 5px;
+  background-color: rgb(207, 207, 207);
+  margin: 3px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: block;
+  height: 30px;
+  width: 75px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 30px;
+  color: black;
+}
+
+.highlight {
+  height: 30px;
+  width: 75px;
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 5px;
+  background-color: rgb(50, 50, 50);
+  margin: 3px;
+}
+
+.highlight a {
+  color: white;
+}
